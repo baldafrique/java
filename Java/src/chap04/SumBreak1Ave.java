@@ -16,6 +16,7 @@ public class SumBreak1Ave {
 		for (i=0; i<n; i++) {
 			input = scanner.nextInt();
 			if (input == 0) {
+				scanner.close();
 				break;
 			}
 			else {

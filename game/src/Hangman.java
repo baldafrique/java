@@ -14,7 +14,7 @@ public class Hangman {
 		hiddenString = "hello";
 	}
 	
-	private int playGame() throws IOException {
+	protected int playGame() throws IOException {
 		inputString = new StringBuffer();
 		outputString = new StringBuffer();
 		remainder = hiddenString.length();
@@ -130,7 +130,7 @@ public class Hangman {
 	    }
 	}
 	
-	private char readChar() throws IOException {
+	public char readChar() throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("1 문자를 입력하세요: ");
 		return in.readLine().charAt(0);
